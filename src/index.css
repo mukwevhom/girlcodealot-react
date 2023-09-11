@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Manrope', sans-serif; 
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.top-bar {
+    background-color: #013d29;
+}
+
+.bar-contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bar-contact a span {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.bar-message p {
+    color: #fff;
+    margin: 0;
+}
+
+.bar-message p a {
+    color: #fff;
+}
+
+.bar-localisation ul {
+    color: #fff;
+    display: flex;
+    gap: 30px;
+}
+
+.bar-localisation ul li span {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.btn {
+    @apply block w-fit py-3 px-6 rounded-3xl font-bold;
+}
+
+.btn-learn-more {
+    @apply btn bg-[#013d29] text-white hover:bg-black text-lg mt-8;
+}
+
+.btn-atc {
+    @apply btn py-2 border border-black text-base mt-2 hover:bg-[#013d29] hover:text-white;
+}
+
